@@ -1,15 +1,18 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { enviromentsComponenet } from './src/concepts/01-enviroments'
-import { callbacksComponent } from './src/concepts/02-callbacks'
-import { promiseComponent } from './src/concepts/03-promises'
-import { promiseRaceComponent } from './src/concepts/04-promise-race'
-import { asyncComponent } from './src/concepts/05-async'
-import { asyncAwaitComponent } from './src/concepts/06-async-await'
-import { asyncAwait2Component } from './src/concepts/07-async-await'
+import "./style.css";
+import javascriptLogo from "./javascript.svg";
+import viteLogo from "/vite.svg";
+import { enviromentsComponenet } from "./src/concepts/01-enviroments";
+import { callbacksComponent } from "./src/concepts/02-callbacks";
+import { promiseComponent } from "./src/concepts/03-promises";
+import { promiseRaceComponent } from "./src/concepts/04-promise-race";
+import { asyncComponent } from "./src/concepts/05-async";
+import { asyncAwaitComponent } from "./src/concepts/06-async-await";
+import { asyncAwait2Component } from "./src/concepts/07-async-await";
+import { forAwaitComponent } from "./src/concepts/08-for-await";
+import { generatorFunctionsComponent } from "./src/concepts/09-generatorFunctions";
+import { generatorAsyncComponent } from "./src/concepts/10-generatos-async";
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
@@ -22,9 +25,9 @@ document.querySelector('#app').innerHTML = `
 
     </div>
   </div>
-`
+`;
 
-const element = document.querySelector('.card')
+const element = document.querySelector(".card");
 
 //enviromentsComponenet(element)
 //callbacksComponent(element)
@@ -32,4 +35,7 @@ const element = document.querySelector('.card')
 //promiseRaceComponent(element)
 //asyncComponent(element)
 //asyncAwaitComponent(element)
-asyncAwait2Component(element)
+//asyncAwait2Component(element)
+//forAwaitComponent(element);
+//generatorFunctionsComponent(element);
+generatorAsyncComponent(element);
